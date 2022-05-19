@@ -8,6 +8,12 @@ namespace SistemaStreaming.Models
 {
     public class AtorFilme
     {
+        public AtorFilme(int atorId, int filmeId)
+        {
+            AtorId = atorId;
+            FilmeId = filmeId
+        }
+
         public int AtorId { get; set; }
         public Ator Ator { get; set; }
 
