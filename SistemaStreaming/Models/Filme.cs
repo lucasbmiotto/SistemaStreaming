@@ -8,7 +8,7 @@ namespace SistemaStreaming.Models
 {
     public class Filme : IEntidade
     {
-        public Filme(string titulo, string descricao, string preco, string imagemURL)
+        public Filme(string titulo, string descricao, decimal preco, string imagemURL)
         {
             Titulo = titulo;
             Descricao = descricao;

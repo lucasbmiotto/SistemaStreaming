@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaStreaming.Models.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,6 +8,11 @@ namespace SistemaStreaming.Models
 {
     public class Categoria : IEntidade
     {
+        public Categoria(string nome)
+        {
+            Nome = nome;
+        }
+
         public int id { get; set; }
         public DateTime DataCadastro { get; set; }
         public DateTime DataAlteracao { get; set; }
